@@ -1,4 +1,4 @@
-const flats = [
+export default [
   {
     id: 145,
     name: "Charm at the Steps of the Sacre Coeur/Montmartre",
@@ -46,7 +46,7 @@ const flats = [
   },
   {
     id: 211,
-    name: "Bohemian and Chic in <Pa></Pa>ris",
+    name: "Bohemian and Chic in Paris",
     imageUrl: "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat6.jpg",
     price: 90,
     priceCurrency: "EUR",
@@ -54,5 +54,3 @@ const flats = [
     lng: 2.350774
   }
 ];
-
-export default flats;
