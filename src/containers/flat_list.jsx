@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setFlats } from '../actions';
 
-import Flat from '../components/flat';
+import Flat from '../containers/flat';
 
 
 // eslint-disable-next-line react/prefer-stateless-function
