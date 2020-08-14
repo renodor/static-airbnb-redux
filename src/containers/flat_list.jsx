@@ -23,7 +23,7 @@ class FlatList extends Component {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    { setFlats: setFlats },
+    { setFlats },
     dispatch
   );
 }
