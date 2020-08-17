@@ -1,12 +1,13 @@
-import flats from '../flats';
-
-// eslint-disable-next-line import/prefer-default-export
 export function setFlats() {
-// TODO: Api call! For now, simulate a DB
-  return {
-    type: 'SET_FLATS',
-    payload: flats
-  };
+  return fetch('https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json') // triggers a GET request
+    .then(response => response.json())
+    .then((data) => {
+    // Do something with the data returned by the API
+      return {
+        type: 'SET_FLATS',
+        payload: data
+      };
+    });
 }
 
 export function selectFlat(flat) {
