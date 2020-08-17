@@ -1,3 +1,5 @@
+import { SELECT_FLAT } from '../actions';
+
 export default function(state, action) {
   // needed to handle default state (initialization)
   if (state === undefined) {
@@ -5,7 +7,7 @@ export default function(state, action) {
   }
 
   switch (action.type) {
-    case 'SELECT_FLAT':
+    case SELECT_FLAT:
       return action.payload;
     default:
       return state;
